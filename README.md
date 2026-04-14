@@ -43,8 +43,8 @@
 > Design principle: Every agent in the perception stack has a single classification task. Disagreement between agents is not resolved by averaging — it is treated as an ambiguity signal that triggers conservative action. Ambiguity is not an error state — it is a safety signal.
 
 <img width="860" height="294" alt="image" src="https://github.com/user-attachments/assets/ec5f43f8-39c7-4881-8027-f12f87e47195" />
-### The 3 architecture decisions that saved the test licence
 
+### The 3 architecture decisions that saved the test licence
 - ADR #1 — Consensus over averaging.
   When Object Classifier and Depth Estimator disagree on object type, the answer is never "average the probabilities." The answer is "we don't know — apply the most conservative available action."
 - ADR #2 — Dynamic confidence floor.
